@@ -1,0 +1,267 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+header{
+    z-index: 1;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    height: 155px;
+}
+header img{
+    position: absolute;
+    width: 300px;
+    margin: 35px 0px 0px 20px;
+}
+#info{
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    margin: 30px 30px 0px 0px;
+    padding: 0px;
+}
+#info h1, h2{
+    line-height: 10px;
+}
+#info h2{
+    font-family: "Segoe UI Light";
+    font-size: 26.5px;
+    color: black;
+}
+#info h1{
+    font-family: "Segoe UI Semibold";
+    color: green;
+    font-size: 34.5px;
+}
+#nav{
+    position: relative;
+    text-align: right;
+}
+.menu{
+    position: relative;
+    padding: 0px;
+    margin: 0px 30px 0px 0px;
+    top: 115px;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+.menu li a{
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: "Segoe UI";
+}
+#mobile_contact{
+    display: none;
+}
+span{
+    color: forestgreen;
+}
+label{
+    display: none;
+}
+
+#slideshow{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-bottom: 5px solid forestgreen;
+}
+#slideshow img{
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: -150px;
+}
+#form_holder{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+#metal{
+    background-image: url(../resources/metal.png);
+    background-size: contain;
+    z-index: 4;
+    position: absolute;
+    margin: -50px 0px 0px -50px;
+    width: 100px;
+    height: 100px;
+}
+#quote{
+    position: relative;
+    width: 300px;
+    height: 390px;
+    background-color: rgba(230,255,210,1);
+    margin: 0 auto;
+    margin-top: 60px;
+    box-shadow: 0px 0px 0px 10px rgba(255,255,255,.2);
+    display: inline-block;
+}
+#head{
+    background-color: white;
+    position: relative;
+    height: 50px;
+}
+#quote img{
+    position: relative;
+    margin: 0 auto;
+    top: 7px;
+    width: 55%;
+    background-color: white;
+}
+#cta{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: forestgreen;
+    color: white;
+    font-family: "Segoe UI Light";
+    font-size: 11px;
+    line-height: 20px;
+}
+#fields{
+    position: relative;
+    top: 50px;
+}
+#fields input{
+    display: inline-block;
+    width: 85%;
+    height: 20px;
+    margin: 20px 0px 0px 0px;
+}
+#firstname, #lastname, #email, #streetaddress{
+    color: darkgrey;
+}
+#submit{
+    cursor: pointer;
+    padding: 20px;
+    border-style: none;
+    font-family: "Segoe UI";
+    line-height: 0px;
+    font-size: 20px;
+    color: white;
+    background-color: #ffd447;
+}
+section{
+    position: relative;
+    height: 1000px;
+    width:  90%;
+    margin: 0 auto;
+    text-align: center;
+}
+section h1{
+    position: relative;
+    top: 90px;
+    font-size: 32px;
+    font-family: "Segoe UI Light";
+    color: dimgrey;
+    margin: 0 auto;
+}
+#services{
+    position: relative;
+    width: auto;
+    top: 125px;
+    text-align: center;
+}
+.service{
+    display: inline-flex;
+    position: relative;
+    margin: 20px 10px 0px 10px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,.1);
+    width: 150px;
+    height: 325px;
+}
+#icon{
+    display: block;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background-image: url(../resources/services.png);
+}
+#description{
+    padding-left: 10px;
+    text-align: left;
+    position: absolute;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    color: dimgrey;
+    top: 125px;
+    width: 140px;
+    height: 250px;
+    display: block;
+}
+@media screen and (max-width: 620px) {
+        #nav label{
+            position: relative;
+            top: 35px;
+            margin: 0 auto;
+            width: 25px;
+            height: 25px;
+            font-size: 35px;
+            display: block;
+            cursor: pointer;
+        }
+        header{
+            text-align: center;
+        }
+        #nav{
+            position: relative;
+            text-align: center;
+        }
+        header img{
+            top: 35px;
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+            z-index: 4;
+        }
+        #info{
+            display: none;
+        }
+        .menu{
+            opacity: 0;
+            z-index: 2;
+            position: absolute;
+            top: 90px;
+            text-align: center;
+            width: 100%;
+        }
+        .menu li{
+            width: 100%;
+            background-color: white;
+            margin: -1px 0px 0px 0px;
+            padding: 0px;
+        }
+        .menu li:hover{
+            background-color: rgba(230,255,210,1);
+        }
+        span{
+            color: black;
+        }
+        #mobile_contact{
+            display: block;
+        }
+        #toggle:checked~ .menu{
+            opacity: 1;
+            transition: opacity .2s ease-in-out;
+        }
+    }
+}
